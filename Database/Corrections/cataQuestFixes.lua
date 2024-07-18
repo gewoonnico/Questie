@@ -3305,6 +3305,7 @@ function CataQuestFixes.Load()
         },
         [25849] = { -- When Archaeology Attacks
             [questKeys.preQuestSingle] = {},
+            [questKeys.nextQuestInChain] = 26189,
         },
         [25860] = { -- At All Costs
             [questKeys.preQuestSingle] = {},
@@ -3719,6 +3720,9 @@ function CataQuestFixes.Load()
         },
         [26182] = { -- Back to the Tenebrous Cavern
             [questKeys.preQuestSingle] = {26143},
+        },
+        [26189] = { -- The Angerfang Menace
+            [questKeys.nextQuestInChain] = 26195,
         },
         [26191] = { -- The Culmination of Our Efforts
             [questKeys.preQuestSingle] = {},
@@ -4690,7 +4694,6 @@ function CataQuestFixes.Load()
         },
         [26981] = { -- Whelgar's Retreat
             [questKeys.nextQuestInChain] = 25849,
-            [questKeys.exclusiveTo] = {25849},
         },
         [26997] = { -- The Usual Suspects
             [questKeys.objectives] = {{{29152,nil,Questie.ICON_TYPE_TALK}}},
