@@ -3318,6 +3318,7 @@ function CataQuestFixes.Load()
         },
         [25864] = { -- Dinosaur Crisis
             [questKeys.preQuestSingle] = {},
+            [questKeys.nextQuestInChain] = 25865,
         },
         [25881] = { -- Lost Wardens
             [questKeys.preQuestSingle] = {25372},
