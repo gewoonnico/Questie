@@ -3284,6 +3284,9 @@ function CataQuestFixes.Load()
             [questKeys.nextQuestInChain] = 25904,
             [questKeys.startedBy] = {{41480}},
         },
+        [25849] = { -- When Archaeology Attacks
+            [questKeys.preQuestSingle] = {},
+        },
         [25860] = { -- At All Costs
             [questKeys.preQuestSingle] = {},
             [questKeys.preQuestGroup] = {25629,25896},
@@ -4655,6 +4658,10 @@ function CataQuestFixes.Load()
         },
         [26977] = { -- Twilight Investigation
             [questKeys.preQuestSingle] = {26960},
+        },
+        [26981] = { -- Whelgar's Retreat
+            [questKeys.nextQuestInChain] = 25849,
+            [questKeys.exclusiveTo] = {25849},
         },
         [26997] = { -- The Usual Suspects
             [questKeys.objectives] = {{{29152,nil,Questie.ICON_TYPE_TALK}}},
