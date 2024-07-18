@@ -2891,6 +2891,10 @@ function CataQuestFixes.Load()
             [questKeys.objectives] = {{{39999,nil,Questie.ICON_TYPE_INTERACT}}},
             [questKeys.extraObjectives] = {{nil,Questie.ICON_TYPE_EVENT,l10n("Escort the Injured Fawn back home"),0,{{"monster",39930}}}},
         },
+        [25395] = { -- The Stolen Keg
+            [questKeys.preQuestSingle] = {},
+            [questKeys.nextQuestInChain] = 25770,
+        },
         [25404] = { -- If You're Not Against Us...
             [questKeys.objectives] = {{{39933,nil,Questie.ICON_TYPE_TALK}}},
             [questKeys.preQuestSingle] = {25584},
@@ -3663,6 +3667,10 @@ function CataQuestFixes.Load()
             [questKeys.preQuestSingle] = {25973},
             [questKeys.extraObjectives] = {{nil,Questie.ICON_TYPE_EVENT,l10n("Use the Blade to become a naga"),0,{{"object",460005}}}},
             [questKeys.objectives] = {{{41982,nil,Questie.ICON_TYPE_EVENT},{41222}}},
+        },
+        [26137] = { -- Checking on the Boys
+            [questKeys.exclusiveTo] = {25395},
+            [questKeys.nextQuestInChain] = 25395,
         },
         [26143] = { -- All That Rises
             [questKeys.extraObjectives] = {{nil,Questie.ICON_TYPE_INTERACT,l10n("Control the Bound Torrent"),0,{{"monster",47969}}}},
@@ -6316,6 +6324,10 @@ function CataQuestFixes.Load()
         },
         [28561] = { -- Nahom Must Hold
             [questKeys.preQuestSingle] = {28533},
+        },
+        [28565] = { -- Hero's Call: Wetlands!
+            [questKeys.exclusiveTo] = {25395},
+            [questKeys.nextQuestInChain] = 25395,
         },
         [28568] = { -- Warchief's Command: Silverpine Forest!
             [questKeys.exclusiveTo] = {26964,26965},
