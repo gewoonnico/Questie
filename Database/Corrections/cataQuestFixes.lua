@@ -3276,6 +3276,9 @@ function CataQuestFixes.Load()
         [25777] = { -- Onwards to Menethil
             [questKeys.nextQuestInChain] = 25780,
         },
+        [25780] = { -- Assault on Menethil Keep
+            [questKeys.preQuestSingle] = {},
+        },
         [25794] = { -- Undersea Sanctuary
             [questKeys.objectives] = {{{41294,nil,Questie.ICON_TYPE_EVENT}}},
         },
@@ -3285,11 +3288,33 @@ function CataQuestFixes.Load()
         [25799] = { -- Defend the Drill
             [questKeys.triggerEnd] = {"Oil Drilling Rig defended",[zoneIDs.THOUSAND_NEEDLES]={{85.9,44.6},{90.2,50.7},{87.2,49.5},{88.3,44.4}}},
         },
+        [25800] = { -- When Life Gives You Crabs
+            -- TODO: when multiple nextQuestInChain quests are supported, mark 25801 Claws from the Deep + 25802 Reclaiming Goods as next quests in chain
+        },
+        [25801] = { -- Claws from the Deep
+            [questKeys.preQuestSingle] = {25800},
+        },
+        [25802] = { -- Reclaiming Goods
+            [questKeys.preQuestSingle] = {25800},
+        },
         [25807] = { -- An Ancient Reborn
             [questKeys.objectives] = {{{41300,nil,Questie.ICON_TYPE_EVENT}}},
         },
         [25810] = { -- The Hatchery Must Burn
             [questKeys.startedBy] = {{41003}},
+        },
+        [25815] = { -- The Third Fleet
+            [questKeys.nextQuestInChain] = 25816,
+        },
+        [25816] = { -- Cursed To Roam
+            [questKeys.nextQuestInChain] = 25817,
+        },
+        [25817] = { -- The Cursed Crew
+            [questKeys.nextQuestInChain] = 25818,
+        },
+        [25818] = { -- Lifting the Curse
+            [questKeys.nextQuestInChain] = 25819,
+            [questKeys.objectives] = {{{41429,nil,Questie.ICON_TYPE_SLAY}}},
         },
         [25824] = { -- Debriefing
             [questKeys.objectives] = {{{41340,nil,Questie.ICON_TYPE_TALK}}},
