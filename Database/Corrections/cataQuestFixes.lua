@@ -3307,6 +3307,12 @@ function CataQuestFixes.Load()
             [questKeys.preQuestSingle] = {},
             [questKeys.nextQuestInChain] = 26189,
         },
+        [25854] = { -- I'll Call Him Bitey
+            [questKeys.nextQuestInChain] = 25855,
+        },
+        [25856] = { -- Crocolisk Hides
+            [questKeys.nextQuestInChain] = 25857,
+        },
         [25860] = { -- At All Costs
             [questKeys.preQuestSingle] = {},
             [questKeys.preQuestGroup] = {25629,25896},
@@ -3319,6 +3325,22 @@ function CataQuestFixes.Load()
         [25864] = { -- Dinosaur Crisis
             [questKeys.preQuestSingle] = {},
             [questKeys.nextQuestInChain] = 25865,
+        },
+        [25866] = { -- Dark Iron Trappers
+            [questKeys.preQuestSingle] = {25865}, -- Requires The Mosshide Job to be completed before unlocking
+            [questKeys.inGroupWith] = {25867},
+            [questKeys.exclusiveTo] = {},
+            [questKeys.nextQuestInChain] = 25868,
+        },
+        [25867] = { -- Gnoll Escape
+            [questKeys.preQuestSingle] = {25865}, -- Requires The Mosshide Job to be completed before unlocking
+            [questKeys.inGroupWith] = {25866},
+            [questKeys.exclusiveTo] = {},
+            [questKeys.nextQuestInChain] = 25868,
+        },
+        [25868] = { -- Yorla Darksnare
+            [questKeys.preQuestSingle] = {},
+            [questKeys.preQuestGroup] = {25866,25867},
         },
         [25881] = { -- Lost Wardens
             [questKeys.preQuestSingle] = {25372},
